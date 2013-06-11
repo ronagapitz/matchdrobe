@@ -11,7 +11,7 @@ $_SESSION["matchdrobe_token"] = substr(md5(rand()),0,12);
 
 $token = (isset($_SESSION["matchdrobe_token"]) ? $_SESSION["matchdrobe_token"] : "") ;
 if(isset($_SESSION["matchdrobe_user"])){
-  $checku = mysql_query("
+	$checku = mysql_query("
 	SELECT prelogin
 	FROM user_profile WHERE id = '".$_SESSION["matchdrobe_user"]["id"]."'
 	")or die(mysql_error());
@@ -518,7 +518,7 @@ function rons()
 
 	
 }
-  var add = setInterval(rons,5000);
+  var add = setInterval(rons,4000);
 		
 		
  var index = 100;
@@ -527,40 +527,18 @@ function rons()
 
  var ron= "#" + $(this).attr("href");
  
- if(ron === '#b3')
- {
- $("#b1 img").attr("src","<?php echo $url;?>images/homepage/own.jpg");
-
- }
- if(ron === '#b1')
- {
  
-  $("#b1 img").attr("src","<?php echo $url;?>images/homepage/discover.jpg");
-
- }
- 
- if(ron === '#b4')
- {
-   $("#b2 img").attr("src","<?php echo $url;?>images/homepage/advice.jpg");
-
- }
- if(ron === '#b2')
- {
- 
-  $("#b2 img").attr("src","<?php echo $url;?>images/homepage/create.jpg");
-
- }
  var show = $(this).attr("data-show")
-$("#scroller").animate({ scrollLeft: show }, 2000);
- $(ron).css("z-index",index).show().animate({width:'980px'},1000, function()
+ $(".home_banner").fadeOut(3000);
+
+ $(ron).fadeIn(3000, function()
  {
  
    clearInterval(add);
 
- $(".home_banner").removeClass("active");
 $(ron).addClass("active");
 index++;
-add = setInterval(rons, 5000);
+add = setInterval(rons, 4000);
 		
  });
  
