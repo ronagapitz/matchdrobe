@@ -7,7 +7,7 @@ require("sqlConfig.php");
 ?>
 
         <?php 
-  	include 'header.php';
+		include 'header.php';
 		?>
         
               <div id="main-container">
@@ -22,7 +22,6 @@ require("sqlConfig.php");
 			  
 			  </div>
 			  <div id="scroller" style="width:980px;overflow:hidden">
-			  <div style="width:10000px;overflow:hidden">
 			<div id="b1" class="home_banner active">
 						<a href="http://matchdrobe.com/feeds">
 
@@ -47,8 +46,7 @@ require("sqlConfig.php");
 			<img src="<?php echo $url;?>images/homepage/advice.jpg"  />
 			</a>
 			</div>
-			
-			</div>
+		
 			</div>
 			
 			
@@ -85,10 +83,8 @@ z-index: 1000;
 	}
 	.home_banner
 	{
-	
-
-float:left;
-position:relative;
+display:none;
+position: absolute;
 	margin-right:0px;
 	}
 	.active
