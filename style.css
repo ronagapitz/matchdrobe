@@ -201,6 +201,209 @@ opacity:.8;
 }
 
 /*outfit */
+
+/* create otw */
+.cat_container
+{
+width: 140px;
+height: 200px;
+text-align: center;
+margin: 8px;
+overflow: hidden;
+float: left;
+
+}
+.cat_container p
+{
+visibility:hidden;
+}
+.cat_container a
+{
+margin-left: 15px;
+}
+a#fem_lips
+{
+padding: 10px;
+margin-top: 30px;
+background: white url(asset/images/women_category.jpg) -607px -227px;
+margin-left: 41px;
+width: 38px;
+height: 118px;
+display: block;
+float: left;
+}
+a#fem_ribbon
+{
+margin-top: 30px;
+background: white url(asset/images/women_category.jpg) -444px -254px;
+
+width: 115px;
+height: 69px;
+display: block;
+float: left;
+}
+a#fem_short
+{
+margin-top: 30px;
+background: white url(asset/images/women_category.jpg) -577px -56px;
+
+width: 114px;
+height: 76px;
+display: block;
+float: left;
+}
+a#fem_under
+{
+
+background: white url(asset/images/women_category.jpg) -39px -205px;
+
+width: 100px;
+height: 157px;
+display: block;
+float: left;
+}
+a#fem_shoes
+{
+margin-top: 30px;
+background: white url(asset/images/women_category.jpg) -176px -241px;
+
+width: 106px;
+height: 93px;
+display: block;
+float: left;
+}
+a#fem_bag
+{
+padding: 10px;
+margin-top: 30px;
+background: white url(asset/images/women_category.jpg) -320px -242px;
+
+width: 90px;
+height: 84px;
+display: block;
+float: left;
+}
+a#fem_top
+{
+margin-top: 30px;
+background: white url(asset/images/women_category.jpg) -10px -20px;
+
+width: 113px;
+height: 130px;
+display: block;
+float: left;
+}
+
+a#fem_jeans
+{
+margin-top: 30px;
+background: white url(asset/images/women_category.jpg) -460px -7px;
+
+width: 77px;
+height: 198px;
+display: block;
+float: left;
+}
+
+a#fem_skirt
+{
+margin-top: 30px;
+background: white url(asset/images/women_category.jpg) -309px -45px;
+
+width: 122px;
+height: 86px;
+display: block;
+float: left;
+}
+a#fem_dress
+{
+margin-top: 30px;
+background: white url(asset/images/women_category.jpg) -153px -5px;
+
+width: 120px;
+height: 165px;
+display: block;
+float: left;
+}
+#source_div
+{
+height: 210px;
+width: 310px;
+position: fixed;
+z-index: 1002;
+display: none;
+background-color: white;
+opacity: 1;
+
+}
+
+#cat_div
+{
+height: 535px;
+width: 780px;
+position: fixed;
+z-index: 1002;
+display: none;
+background-color: white;
+opacity: 1;
+
+}
+#gender_div
+{
+
+display:none;font: normal 10pt futura_std_book, arial, sans-serif;
+height: 210px;
+width: 310px;
+position: fixed;
+z-index: 1002;
+display: none;
+background-color: white;
+opacity: 1;
+}
+a#otw_men
+{
+margin-top: 30px;
+background: white url(asset/images/gender.jpg) 0 0;
+margin-left: 75px;
+width: 32px;
+height: 96px;
+display: block;
+float: left;
+}
+
+a#wd
+{
+margin-top: 30px;
+background: white url(asset/images/source.jpg) 0 0;
+margin-left: 44px;
+width: 84px !important;
+height: 103px !important;
+display: block;
+float: left;
+
+}
+
+a.ct
+{
+margin-top: 30px;
+background: white url(asset/images/source.jpg) -85px 0;
+margin-left:44px;
+width: 84px !important;
+height: 103px !important;
+display: block;
+float: left;
+
+}
+a#otw_women
+{
+margin-top: 30px;
+background: white url(asset/images/gender.jpg) -33px 0;
+margin-left: 75px;
+width: 46px;
+height: 96px;
+display: block;
+float: left;
+}
 .icon_container
 {
 width: 73.5px;
@@ -311,7 +514,7 @@ z-index: -100;
 
 }
 li a.cat.selectedsub{
-  background-color:#b80941;
+	background-color:#b80941;
 	color:#fff;
 	text-decoration:none;
 	
@@ -716,7 +919,6 @@ ul#site-menu {
        
         color: #000;
     }
-/* create otw */
 
 body
 {
