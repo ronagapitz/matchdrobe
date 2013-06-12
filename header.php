@@ -429,7 +429,48 @@ include($url.'feeds/feed.js.php');
    clearInterval(add);
 
 
-}<?php
+}
+
+
+
+
+
+
+
+		<?php
+if(defined("create")) //if create is active page
+{
+
+?>
+$(".cat_container").mouseenter(function()
+{
+
+$("p",this).css("visibility","visible");
+});
+$(".cat_container").mouseleave(function()
+{
+
+$("p",this).css("visibility","hidden");
+});
+
+<?php
+}
+
+?>
+
+
+
+
+
+<?php
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		if(defined('catalogue'))
 		{
@@ -645,8 +686,8 @@ add = setInterval(rons, 4000);
   		
     });
 	</script>
-		
-</head>
+
+</head> 
 
 										  
 <body id="body" >
